@@ -1,25 +1,26 @@
-import InteractiveMenu from "./InteractiveMenu";
-import About from "./About";
-import Work from "./Work";
-import Contact from "./Contact";
-import Visualizer from "../visualizer/Visualizer";
-import Art from "./Art";
+import InteractiveMenu from './InteractiveMenu'
+import About from './About'
+import Work from './Work'
+import Contact from './Contact'
+import Visualizer from '../visualizer/Visualizer'
+import Gallery from '../gallery'
+
 const menuItems = [
   {
-    label: "About Me",
-    content: <About />,
+    label: 'About Me',
+    content: <About />
   },
   {
-    label: "My Work",
-    content: <Work />,
+    label: 'My Work',
+    content: <Work />
   },
   {
-    label: "Get in Touch",
-    content: <Contact />,
+    label: 'Get in Touch',
+    content: <Contact />
   },
-  { label: "Music", content: <Visualizer /> },
-  { label: "Art", content: <Art /> },
-];
+  { label: 'Music', content: <Visualizer /> },
+  { label: 'Art', content: <Gallery /> }
+]
 
 const Portfolio = () => {
   return (
@@ -34,7 +35,7 @@ const Portfolio = () => {
 
       <InteractiveMenu menuItems={menuItems} />
     </>
-  );
-};
+  )
+}
 
-export default Portfolio;
+export default Portfolio
